@@ -18,6 +18,17 @@
 bash ipv6-manager.sh
 ```
 
+或者，从公开仓库下载并运行。将 `用户名`、`仓库名` 和分支名替换为实际值，并根据仓库目录调整脚本路径：
+
+```bash
+curl -fsSL \
+  'https://raw.githubusercontent.com/cachenow/ipv6-manager/main/ipv6-manager.sh' \
+  -o ipv6-manager.sh &&
+  bash ipv6-manager.sh
+```
+
+脚本会下载到当前目录。菜单中选择安装后，管理命令会保存到 `/usr/local/sbin/ipv6-manager`。
+
 首次进入菜单后选择 **6. 安装**，确认后脚本会安装管理命令和开机服务。安装完成后可通过以下命令进入菜单：
 
 ```bash
